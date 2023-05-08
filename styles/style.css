@@ -109,7 +109,6 @@ input {
 }
 
 body {
-  background-color: #ff8c70;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -122,4 +121,38 @@ body {
   color: #fffcfc;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+nav {
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  background-color: #ff8c70;
+  color: #fffcfc;
+  font-size: 1.1rem;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .left-nav {
+  margin-left: 2rem;
+  justify-content: space-between;
+  border: black 1px solid;
+}
+nav .right-nav {
+  border: black 1px solid;
+  margin-right: 2rem;
+}
+nav .nav-link {
+  margin: 0.5rem;
+}
+
+.testimonials {
+  background-color: #fefaf9;
+}
+
+.marketing {
+  background-color: #fefaf9;
 }/*# sourceMappingURL=style.css.map */
