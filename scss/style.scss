@@ -1,14 +1,18 @@
 $dark-green: #367d59;
+$light-green: #05b57a;
 $coral: #ff8c70;
 $white-text: #fffcfc;
 $white-background: #fefaf9;
+$black-text: #1c1d1d;
 
 @import "./reset";
 
 body {
-  background-color: $coral;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
 }
 
 .banner {
@@ -20,4 +24,42 @@ body {
   color: $white-text;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+nav {
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  background-color: $coral;
+  color: $white-text;
+  font-size: 1.1rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-nav {
+    margin-left: 2rem;
+    justify-content: space-between;
+    border: black 1px solid;
+  }
+
+  .right-nav {
+    border: black 1px solid;
+    margin-right: 2rem;
+  }
+
+  .nav-link {
+    margin: 0.5rem;
+  }
+}
+
+.testimonials {
+  background-color: $white-background;
+}
+
+.marketing {
+  background-color: $white-background;
 }
