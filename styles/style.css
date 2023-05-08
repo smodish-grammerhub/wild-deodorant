@@ -1,3 +1,41 @@
+body {
+  background-color: #ff8c70;
+  font-family: Futura PT, Trebuchet MS, Arial, system-ui;
+}
+
+.white {
+  color: #fffcfc;
+}
+
+.black {
+  color: #1c1d1d;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redefined {
+  font-size: 50px;
+}
+
+.shopButton {
+  background-color: #367d59;
+  border-radius: 5px;
+  height: 50px;
+  width: 130px;
+}
+
+.deodorant-img {
+  height: 100px;
+  width: 100px;
+}
+
+.tagline-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 *,
 *:before,
 *:after {
