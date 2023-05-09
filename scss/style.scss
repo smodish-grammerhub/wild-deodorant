@@ -1,8 +1,9 @@
-$dark-green: #367d59;
-$light-green: #05b57a;
+$dark-green: #1d7f75;
+$light-green: #00b67a;
 $coral: #ff8c70;
 $white-text: #fffcfc;
 $white-background: #fefaf9;
+$white-stars: #f9fcfd;
 $black-text: #1c1d1d;
 
 $breakpoint-sm: 640px;
@@ -194,12 +195,6 @@ nav {
   img {
     height: 30rem;
   }
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.container {
 }
 
 .banner {
@@ -252,40 +247,61 @@ nav {
 }
 
 .cta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: $coral;
 }
 
 .cta-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
+  align-self: left;
+  height: 22rem;
 }
 
 .redefined {
-  font-size: 50px;
+  font-size: 3.125rem;
+  font-weight: bold;
 }
 
 .shopButton {
   background-color: $dark-green;
-  border-radius: 5px;
-  height: 50px;
-  width: 130px;
+  border-radius: 0.313rem;
+  height: 3.125rem;
+  width: 8.125rem;
+}
+
+.starContainer {
+  position: relative;
+}
+
+.stars {
+  height: 1.5rem;
+}
+
+.trustpilot-logo {
+  height: 1rem;
 }
 
 .deodorant-img {
-  height: 100px;
-  width: 100px;
+  height: 25rem;
+  width: 25rem;
+  object-fit: fill;
+  justify-self: right;
+}
+
+.tagline {
+  margin-top: 1rem;
 }
 
 .tagline-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  // grid-template-columns: repeat(4, 1fr);
 }
 
-.testimonials {
-  background-color: $white-background;
-}
-
-.marketing {
-  background-color: $white-background;
+.tagline-header,
+.instructions-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 }
