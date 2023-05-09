@@ -56,6 +56,45 @@ nav {
   }
 }
 
+.white {
+  color: $white-text;
+}
+
+.black {
+  color: $black-text;
+}
+
+.cta {
+  background-color: $coral;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redefined {
+  font-size: 50px;
+}
+
+.shopButton {
+  background-color: $dark-green;
+  border-radius: 5px;
+  height: 50px;
+  width: 130px;
+}
+
+.deodorant-img {
+  height: 100px;
+  width: 100px;
+}
+
+.tagline-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .testimonials {
   background-color: $white-background;
 }
