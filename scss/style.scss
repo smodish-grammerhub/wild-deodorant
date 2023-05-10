@@ -12,8 +12,6 @@ $breakpoint-lg: 1024px;
 $breakpoint-xl: 1280px;
 $breakpoint-2xl: 1536px;
 
-@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
 @import "./reset";
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
@@ -199,6 +197,27 @@ nav {
   }
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    max-width: $breakpoint-sm;
+  }
+  @media screen and (min-width: $breakpoint-md) {
+    max-width: $breakpoint-md;
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: $breakpoint-lg;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: $breakpoint-xl;
+  }
+  @media screen and (min-width: $breakpoint-2xl) {
+    max-width: $breakpoint-2xl;
+  }
+}
+
 .banner {
   display: flex;
   justify-content: center;
@@ -211,32 +230,66 @@ nav {
 }
 
 nav {
-  height: 5rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
   background-color: $coral;
-  color: $white-text;
-  font-size: 1.1rem;
+  padding: 2rem 0;
 
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  .nav-contents {
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
 
-  .left-nav {
-    margin-left: 2rem;
-    justify-content: space-between;
-    border: black 1px solid;
-  }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white-text;
+      font-size: 1.1rem;
+    }
 
-  .right-nav {
-    border: black 1px solid;
-    margin-right: 2rem;
-  }
+    .left-nav {
+      justify-content: left;
+      border: black 1px solid;
 
-  .nav-link {
-    margin: 0.5rem;
+      div {
+        @media screen and (min-width: $breakpoint-lg) {
+          padding-right: 1rem;
+        }
+        @media screen and (min-width: $breakpoint-xl) {
+          padding-right: 3rem;
+        }
+      }
+    }
+
+    .logo {
+      color: white;
+      fill: white;
+      margin: auto;
+
+      width: 5rem;
+      height: 2rem;
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: 7rem;
+        height: 3rem;
+      }
+      @media screen and (min-width: $breakpoint-lg) {
+        width: 8rem;
+        height: 3rem;
+      }
+    }
+
+    .right-nav {
+      border: black 1px solid;
+      justify-content: end;
+
+      .button {
+        padding-left: 1rem;
+      }
+    }
+
+    .nav-link {
+      margin: 0.5rem;
+    }
   }
 }
 
@@ -337,4 +390,58 @@ nav {
 
 .how-it-works-leaf {
   height: 1rem;
+  border-radius: 5px;
+  height: 50px;
+  width: 130px;
+}
+
+.deodorant-img {
+  height: 100px;
+  width: 100px;
+}
+
+.tagline-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.testimonials {
+  background-color: $white-background;
+  text-align: center;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  margin-bottom: 2rem;
+  border: black 1px solid;
+}
+
+.marketing {
+  background-color: $white-background;
+
+  .two-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    // border: black 1px solid;
+  }
+
+  .copy {
+    width: 90%;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  img {
+    height: 30rem;
+  }
 }
