@@ -7,10 +7,12 @@ $white-stars: #f9fcfd;
 $black-text: #1c1d1d;
 
 @import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Ysabeau", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -24,7 +26,7 @@ body {
   background-color: $dark-green;
   color: $white-text;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 nav {
@@ -136,7 +138,7 @@ nav {
 
 .redefined {
   font-size: 3.125rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .shopButton {
@@ -170,15 +172,46 @@ nav {
 }
 
 .tagline-container {
-  display: grid;
-  // grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.effective,
+.sustainable,
+.convenient,
+.clean {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tagline-header,
 .instructions-header {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tagline-container {
+  margin-bottom: 1rem;
+}
+
+.leaves,
+.leaf,
+.earth,
+.clock {
+  height: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.how-it-works-leaf {
+  height: 1rem;
 }
 
 .testimonials {
