@@ -7,4 +7,21 @@
   }
   margin-bottom: 2rem;
   border: black 1px solid;
+
+  .testimonial-content {
+    display: flex;
+    .overall-rating {
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+
+    .post {
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+    }
+  }
 }
