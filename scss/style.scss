@@ -1,9 +1,8 @@
-$dark-green: #1d7f75;
-$light-green: #00b67a;
+$dark-green: #367d59;
+$light-green: #05b57a;
 $coral: #ff8c70;
 $white-text: #fffcfc;
 $white-background: #fefaf9;
-$white-stars: #f9fcfd;
 $black-text: #1c1d1d;
 
 $breakpoint-sm: 640px;
@@ -16,6 +15,61 @@ $breakpoint-2xl: 1536px;
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
 
+body {
+  font-family: "Ysabeau", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: $dark-green;
+  color: $white-text;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+nav {
+  height: 5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  background-color: $coral;
+  color: $white-text;
+  font-size: 1.1rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-nav {
+    margin-left: 2rem;
+    justify-content: space-between;
+    border: black 1px solid;
+  }
+
+  .right-nav {
+    border: black 1px solid;
+    margin-right: 2rem;
+  }
+
+  .nav-link {
+    margin: 0.5rem;
+  }
+}
+
+.testimonials {
+  background-color: $white-background;
+}
+
+.marketing {
+  background-color: $white-background;
 body {
   font-family: "Ysabeau", sans-serif;
   font-weight: 400;
@@ -126,10 +180,22 @@ nav {
 }
 
 .cta {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: $coral;
 }
 
 .cta-container {
+  display: grid;
+  justify-content: center;
+  align-self: left;
+  height: 22rem;
+}
+
+.redefined {
+  font-size: 3.125rem;
+  font-weight: 600;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,262 +224,6 @@ nav {
 
 .testimonials {
   background-color: $white-background;
-  text-align: center;
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  margin-bottom: 2rem;
-  border: black 1px solid;
-}
-
-.marketing {
-  background-color: $white-background;
-
-  .two-up {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    // border: black 1px solid;
-  }
-
-  .copy {
-    width: 90%;
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      padding-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      padding-bottom: 1rem;
-    }
-  }
-
-  img {
-    height: 30rem;
-  }
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-
-  @media screen and (min-width: $breakpoint-sm) {
-    max-width: $breakpoint-sm;
-  }
-  @media screen and (min-width: $breakpoint-md) {
-    max-width: $breakpoint-md;
-  }
-  @media screen and (min-width: $breakpoint-lg) {
-    max-width: $breakpoint-lg;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    max-width: $breakpoint-xl;
-  }
-  @media screen and (min-width: $breakpoint-2xl) {
-    max-width: $breakpoint-2xl;
-  }
-}
-
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3rem;
-  background-color: $dark-green;
-  color: $white-text;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-nav {
-  background-color: $coral;
-  padding: 2rem 0;
-
-  .nav-contents {
-    height: 5rem;
-    display: grid;
-    grid-template-columns: 3fr 1fr 3fr;
-
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $white-text;
-      font-size: 1.1rem;
-    }
-
-    .left-nav {
-      justify-content: left;
-      border: black 1px solid;
-
-      div {
-        @media screen and (min-width: $breakpoint-lg) {
-          padding-right: 1rem;
-        }
-        @media screen and (min-width: $breakpoint-xl) {
-          padding-right: 3rem;
-        }
-      }
-    }
-
-    .logo {
-      color: white;
-      fill: white;
-      margin: auto;
-
-      width: 5rem;
-      height: 2rem;
-
-      @media screen and (min-width: $breakpoint-md) {
-        width: 7rem;
-        height: 3rem;
-      }
-      @media screen and (min-width: $breakpoint-lg) {
-        width: 8rem;
-        height: 3rem;
-      }
-    }
-
-    .right-nav {
-      border: black 1px solid;
-      justify-content: end;
-
-      .button {
-        padding-left: 1rem;
-      }
-    }
-
-    .nav-link {
-      margin: 0.5rem;
-    }
-  }
-}
-
-.white {
-  color: $white-text;
-}
-
-.black {
-  color: $black-text;
-}
-
-.cta {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: $coral;
-}
-
-.cta-container {
-  display: grid;
-  justify-content: center;
-  align-self: left;
-  height: 22rem;
-}
-
-.redefined {
-  font-size: 3.125rem;
-  font-weight: 600;
-}
-
-.shopButton {
-  background-color: $dark-green;
-  border-radius: 0.313rem;
-  height: 3.125rem;
-  width: 8.125rem;
-}
-
-.starContainer {
-  position: relative;
-}
-
-.stars {
-  height: 1.5rem;
-}
-
-.trustpilot-logo {
-  height: 1rem;
-}
-
-.deodorant-img {
-  height: 25rem;
-  width: 25rem;
-  object-fit: fill;
-  justify-self: right;
-}
-
-.tagline {
-  margin-top: 1rem;
-}
-
-.tagline-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.effective,
-.sustainable,
-.convenient,
-.clean {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tagline-header,
-.instructions-header {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.tagline-container {
-  margin-bottom: 1rem;
-}
-
-.leaves,
-.leaf,
-.earth,
-.clock {
-  height: 4rem;
-  margin-bottom: 0.5rem;
-}
-
-.center {
-  text-align: center;
-}
-
-.how-it-works-leaf {
-  height: 1rem;
-  border-radius: 5px;
-  height: 50px;
-  width: 130px;
-}
-
-.deodorant-img {
-  height: 100px;
-  width: 100px;
-}
-
-.tagline-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.testimonials {
-  background-color: $white-background;
-  text-align: center;
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  margin-bottom: 2rem;
-  border: black 1px solid;
 }
 
 .marketing {
