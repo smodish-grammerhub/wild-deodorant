@@ -1,0 +1,29 @@
+.marketing {
+  background-color: $white-background;
+
+  .two-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    // border: black 1px solid;
+  }
+
+  .copy {
+    width: 90%;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  img {
+    height: 30rem;
+  }
+}
