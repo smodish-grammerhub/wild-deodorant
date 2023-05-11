@@ -17,7 +17,7 @@ nav {
 
     .left-nav {
       justify-content: left;
-      border: black 1px solid;
+      // border: black 1px solid;
 
       div {
         @media screen and (min-width: $breakpoint-lg) {
@@ -48,7 +48,7 @@ nav {
     }
 
     .right-nav {
-      border: black 1px solid;
+      // border: black 1px solid;
       justify-content: end;
 
       .button {
