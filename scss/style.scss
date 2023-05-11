@@ -1,23 +1,14 @@
-$dark-green: #367d59;
-$coral: #ff8c70;
-$white-text: #fffcfc;
-$white-background: #fefaf9;
-
 @import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau&display=swap");
 
-body {
-  background-color: $coral;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3rem;
-  background-color: $dark-green;
-  color: $white-text;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
+@import "./variables";
+@import "./globals";
+@import "./utility";
+@import "./banner";
+@import "./nav";
+@import "./cta";
+@import "./tagline";
+@import "./instructions";
+@import "./testimonials";
+@import "./marketing";
