@@ -1,0 +1,48 @@
+.tagline-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tagline {
+  margin-top: 1rem;
+}
+
+.tagline-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.effective,
+.sustainable,
+.convenient,
+.clean {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline-header,
+.instructions-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tagline-container {
+  margin-bottom: 1rem;
+}
+
+.leaves,
+.leaf,
+.earth,
+.clock {
+  height: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
