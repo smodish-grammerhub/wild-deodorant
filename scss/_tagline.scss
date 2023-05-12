@@ -33,3 +33,20 @@
   height: 4rem;
   margin-bottom: 0.5rem;
 }
+
+@media (max-width: $breakpoint-md) {
+  .tagline-header,
+  .instructions-header {
+    font-size: 1.75rem;
+  }
+  .tagline-container {
+    flex-direction: column;
+  }
+
+  .effective,
+  .sustainable,
+  .convenient,
+  .clean {
+    margin-bottom: 1rem;
+  }
+}

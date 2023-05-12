@@ -29,3 +29,26 @@
 .title-and-leaf {
   display: flex;
 }
+
+@media (max-width: $breakpoint-md) {
+  .instructions-container {
+    grid-template-columns: 1fr;
+
+    .hands-on-deodorant {
+      width: 100%;
+      justify-self: none;
+      margin-bottom: 1rem;
+    }
+    .title-and-leaf {
+      display: flex;
+      justify-content: center;
+    }
+    .instructions-copy {
+      text-align: center;
+    }
+    .instructions-content {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+}

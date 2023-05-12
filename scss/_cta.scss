@@ -41,3 +41,31 @@
   object-fit: fill;
   justify-self: right;
 }
+
+@media (max-width: $breakpoint-md) {
+  .cta {
+    grid-template-columns: 1fr;
+    width: 100%;
+    .redefined,
+    .cta-text,
+    .starContainer {
+      text-align: center;
+    }
+    .cta-text {
+      overflow-wrap: normal;
+    }
+    .cta-container {
+      align-items: center;
+    }
+    .shopButton {
+      margin: 0 auto;
+    }
+    .starContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    .stars {
+      margin-bottom: 1rem;
+    }
+  }
+}
