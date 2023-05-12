@@ -51,8 +51,12 @@ nav {
       // border: black 1px solid;
       justify-content: end;
 
-      .button {
-        padding-left: 1rem;
+      .btn {
+        margin-left: 1rem;
+        background-color: $dark-green;
+        border-radius: 0.313rem;
+        height: 3.125rem;
+        width: 8.125rem;
       }
     }
 
