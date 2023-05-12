@@ -1,28 +1,49 @@
 .testimonials {
   background-color: $white-background;
   text-align: center;
+
   h2 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
   }
 
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   // border: black 1px solid;
+
+  .five-star {
+    height: 1.6rem;
+    margin: 0.5rem 0;
+  }
 
   .testimonial-content {
     display: flex;
+
     .overall-rating {
+      padding: 0.2rem;
+      margin-right: 2rem;
       h3 {
         font-size: 1.8rem;
         font-weight: 600;
       }
+      border: 2px solid orange;
     }
 
     .post-carousel {
       display: flex;
-      flex-direction: row;
+      width: 75%;
+
       .post {
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .five-star {
+          height: 1rem;
+          margin: 0.5rem 0;
+        }
+
         h3 {
           font-size: 1.2rem;
           font-weight: 600;
